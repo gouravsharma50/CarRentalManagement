@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>CarRental.Server-a433ee1c-33b4-49ff-93f7-7072a9e09427</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\CarRental.Client.csproj" />
+    <ProjectReference Include="..\Shared\CarRental.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.14" />
+  </ItemGroup>
+
+</Project>
